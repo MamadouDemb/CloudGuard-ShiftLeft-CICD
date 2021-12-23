@@ -3,6 +3,7 @@ pipeline {
       environment {
            CHKP_CLOUDGUARD_ID = credentials("CHKP_CLOUDGUARD_ID")
            CHKP_CLOUDGUARD_SECRET = credentials("CHKP_CLOUDGUARD_SECRET")
+           SHIFTLEFT_REGION =  credentials("SHIFTLEFT_REGION")
         }
         
   stages {
