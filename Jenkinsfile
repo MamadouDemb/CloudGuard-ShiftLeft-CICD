@@ -27,7 +27,7 @@ pipeline {
              
                 
             
-                sh 'chmod +x shiftleft -R ${env.WORKSPACE}' 
+                sh 'chmod +x shiftleft' 
 
                 sh './shiftleft code-scan -s .'
            
