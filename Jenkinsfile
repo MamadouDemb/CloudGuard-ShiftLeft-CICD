@@ -31,6 +31,7 @@ pipeline {
                 sh 'chmod +x shiftleft' 
 
                 sh './shiftleft code-scan -r -2003 -e ec00ab44-b2a5-4d4d-9746-ffaa110dd3b4 -s .'
+                sh 'if [ "$?" = "6" ]; then exit 0; fi'
            
                } catch (Exception e) {
     
